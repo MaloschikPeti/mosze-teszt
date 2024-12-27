@@ -4,23 +4,24 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    int* b = new int[N_ELEMENTS];//helytelen változó név, hiányzó _ jel
-    std::cout << "1-100 ertekek duplazasa" << std::endl;//helytelen karakter használat a string kezeléshez ' helyett " kéne, hiányzik a sortörés
-    for (int i = 0; i < 100; i++)//helytelen for ciklus feltétel csak a kezdõérték van megadva
+    int* b = new int[N_ELEMENTS];//helytelen vÃ¡ltozÃ³ nÃ©v, hiÃ¡nyzÃ³ _ jel
+    std::cout << "1-100 ertekek duplazasa" << std::endl;//helytelen karakter hasznÃ¡lat a string kezelÃ©shez ' helyett " kÃ©ne, hiÃ¡nyzik a sortÃ¶rÃ©s
+    for (int i = 0; i < 100; i++)//helytelen for ciklus feltÃ©tel csak a kezdÅ‘Ã©rtÃ©k van megadva
     {
-        b[i] = (i + 1) * 2;//helytelen módon van használva az i iterátor, nem 1-100 ig megy a sor, hanem 0-99-ig
+        b[i] = (i + 1) * 2;//helytelen mÃ³don van hasznÃ¡lva az i iterÃ¡tor, nem 1-100 ig megy a sor, hanem 0-99-ig
     }
-    for (int i = 0; i < 100; i++)//hiányzik a feltételbõl, hogy az i-nek meddig kell növekednie
+    for (int i = 0; i < 100; i++)//hiÃ¡nyzik a feltÃ©telbÅ‘l, hogy az i-nek meddig kell nÃ¶vekednie
     {
-        std::cout << "Ertek: " << b[i] << std::endl;//hiányzik a b[i] és a sortörés
+        std::cout << "Ertek: " << b[i] << std::endl;//hiÃ¡nyzik a b[i] Ã©s a sortÃ¶rÃ©s
     }
     std::cout << "Atlag szamitasa: " << std::endl;
-    int atlag = 0;//hiányzik a kezdõérték definiálása
-    for (int i = 0; i < N_ELEMENTS; i++)//, helyett ; kéne használni
+    int atlag = 0;//hiÃ¡nyzik a kezdÅ‘Ã©rtÃ©k definiÃ¡lÃ¡sa
+    for (int i = 0; i < N_ELEMENTS; i++)//, helyett ; kÃ©ne hasznÃ¡lni
     {
-        atlag += b[i];//hiányzik a sorvégi ; jel
+        atlag += b[i];//hiÃ¡nyzik a sorvÃ©gi ; jel
     }
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
+    std::cout<<"Sziasztok en vagyok Kovacs Jakab!"
     return 0;
 }
